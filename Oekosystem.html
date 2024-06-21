@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wissenschaftliche Nachrichten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8; /* Hellblauer Hintergrund */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            padding: 40px 20px 20px; /* Platz für die feste Leiste */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 16px; /* Abgerundete Ecken */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .article-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .article-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #555;
+            font-weight: bold;
+        }
+        .article-image {
+            width: 100%;
+            max-height: 300px; /* Begrenzung der Bildhöhe */
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #333;
+        }
+        footer {
+            background-color: #123b52;
+            color: #e6f0f5;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 10px;
+            }
+            .article-title {
+                font-size: 1.8em;
+            }
+            .article-subtitle {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="article-title">Tiefsee</div>
+            <div class="article-subtitle">Das größte Ökosystem der Welt</div>
+            <img src="ocean.jpg" alt="Bild der Tiefsee" class="article-image">
+            <div class="article-content">
+                <p>Bis Mitte des 19. Jahrhundert sind Forschende noch davon ausgegangen, dass die <b>Tiefsee unbelebt</b> ist. Im Mittelmeer konnten damals unter 600m keine Tiere mehr nachgewiesen werden. Die Tiefsee des Mittelmeers ist nämlich eher <b>spärlich besiedelt</b>. Außerdem rutschten den Forschenden die vielen kleine Tiere einfach durch ihre <b>grobmaschigen Netze und Fallen</b>.</p>
+                <p>Forschende haben zwei Milliarden DNA-Proben ausgewertete und kamen zum Ergebnis: Auch heute sind ca. <b>2/3 aller Tiefseelebewesen unbekannt</b>. Doch weiß man, dass hier eine große Artenvielfalt existiert. Die Tiefsee ist sogar das größte Ökosystem der Erde, da sie ca. <b>90% des belebten Raumes der Erde</b> enthält.</p>
+                <p>Viele Tiefseeorganismen haben <b>erstaunliche Anpassungen</b> entwickelt, um unter den extremen Bedingungen zu überleben. Dazu gehört <b>Biolumineszenz</b>, die Fähigkeit von Lebewesen, Licht zu erzeugen. Sie ist in der Tiefsee weit verbreitet.</p> 
+                <p>Viele Tiefseeorganismen nutzen diese erstaunliche Eigenschaft zur <b>Orientierung, Kommunikation oder Jagd</b>.  Zum Beispiel nutzt der <b>Korallenfisch</b> leuchtende Organe unter seinen Augen, um Partner und Beute anzulocken sowie um den eigenen Sehvorgang zu unterstützen.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 SciNews - der Wissenschafts-Newsletter. 
+    </footer>
+
+</body>
+</html>
