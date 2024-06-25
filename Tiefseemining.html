@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wissenschaftliche Nachrichten über die faszinierenden Tiefen der Ozeane.">
+    <title>Wissenschaftliche Nachrichten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> <!-- Import Merriweather font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Import Roboto font -->
+    <style>
+        body {
+            background: url('Hintergrund5.jpg') no-repeat center center fixed; /* Set background image for the entire body */
+            background-size: cover;
+            font-family: 'Merriweather', serif; /* Apply Merriweather font to body */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8; /* Fallback color */
+        }
+        .container {
+            flex: 1;
+            padding: 40px 20px 20px; /* Platz für die feste Leiste */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.7); /* Set card background to white with transparency */
+            position: relative; /* Ensure the pseudo-element is positioned relative to .card */
+            border-radius: 16px; /* Abgerundete Ecken */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden; /* Hide overflow to ensure the pseudo-element respects the border radius */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .article-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .article-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #555;
+            font-weight: bold;
+        }
+        .article-image {
+            width: 100%;
+            max-height: 300px; /* Begrenzung der Bildhöhe */
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #333;
+        }
+        footer {
+            background-color: #123b52;
+            color: #e6f0f5;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 10px;
+            }
+            .article-title {
+                font-size: 1.8em;
+            }
+            .article-subtitle {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="card">
+            <header>
+                <h1 class="article-title">Tiefseemining</h1>
+                <h2 class="article-subtitle">Schätze in der Dunkelheit</h2>
+            </header>
+            <img src="ocean.jpg" alt="Bild der Tiefsee" class="article-image">
+            <section class="article-content">
+                <p><b>Tiefseemining</b> ist eine aufstrebende Industrie, die sich darauf konzentriert, wertvolle Mineralien aus der Tiefsee zu gewinnen. Diese Ressourcen sind oft in <b>unzugänglichen Regionen</b> in der Nähe von Unterwasservulkanen oder hydrothermalen Quellen zu finden.</p> 
+                <p>Für die Industrie sind vor allem <b>Ressourcen</b> wie Manganknollen, polymetallische Sulfide und andere Mineralien von großem Wert. Manganknollen enthalten <b>wertvolle Metalle</b> wie Mangan, Nickel und Kobalt. Diese Metalle werden vor allem in der Stahlindustrie und für Batterien benötigt.</p>
+                <p>Es gibt Bedenken zu den <b>Umweltauswirkungen</b> dieser Förderungsprozesse. Es wird befürchtet, dass das <b>fragile Ökosystem</b> der Tiefsee durch den Bergbau gestört werden könnte. So entstehen z.B. Trübungswolken, wodurch <b>Lebewesen am Meeresboden</b>, wie Schwämme besonders leiden.</p>
+                <p>Wem diese Ressourcen gehören ist gesetzlich nicht genau vorgeschrieben. Liegt das Abbaugebiet innerhalb von <b>200 Seemeilen</b> entfernt von einem Land, so darf allein dieses die Rohstoffe abbauen. Außerhalb dieser Zone liegt die <b>Hohe See</b>. Hier wird der Abbau durch die internationale Meeresbödenbehörde der Vereinten Nationen geregelt. 
+</p>
+            </section>
+        </article>
+    </div>
+    <footer>
+        &copy; 2024 SciNews - der Wissenschafts-Newsletter. 
+    </footer>
+</body>
+</html>
